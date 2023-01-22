@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="">hello world!!</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies production</title>
+    <!-- font-link -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#131313",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+                bebas:["Bebas Neue", "cursive"],
+                montserrat:["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+
+    <!-- navbar-section -->
+     <nav class=" bg-slate-100 fixed top-0 left-0 right-0">
+        <div class="flex font-bebas justify-between items-center h-20 w-full max-w-7xl mx-auto px-5 ">
+            <h1 class=" text-2xl">Jhaka naka production</h1>
+          <ul class="flex text-lg gap-8">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Movies</a></li>
+            <li> <a href="#">Songs</a></li>
+            
+        </ul>
+        </div>
+     </nav>
+     <!-- banner-section -->
+     <section class="h-screen pt-20 bg-[url('/styles/assets/images/banner.jpg')] bg-cover">
+         <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+            <div class="font-bebas">
+                <h2 class="text-lg text-white">Movie production studio</h2>
+                <h1 class="text-white text-7xl">Films MAde to</h1>
+                <h1 class="text-yellow text-7xl">Perfection</h1>
+                <p class="text-montserrat text-white max-w-md my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+               <button class="border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-gray transition-all ">Discover MOre</button>
+            </div>
+         </div>
+
+     </section>
+  </body>
 </html>
